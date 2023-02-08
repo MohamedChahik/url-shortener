@@ -1,0 +1,23 @@
+.app_wrap {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    width: inherit;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.title h1 {
+    text-shadow: 1px 1px 2px pink;
+    font-size: 3em;
+}
+
+.app_wrap .btn_connexion {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+    padding: 4px;;
+}

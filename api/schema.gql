@@ -1,0 +1,49 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type BaseUserOut {
+  id: ID!
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String!
+  avatar: String
+}
+
+type UserOutput {
+  accessToken: String!
+  user: BaseUserOut!
+}
+
+type UrlOutput {
+  id: ID!
+  shortUrl: String!
+}
+
+type Query {
+  getShorUrls: [UrlOutput!]!
+}
+
+type Mutation {
+  shortenUrl(input: UrlInputDto!): UrlOutput!
+  authRegister(input: RegisterUserInput!): UserOutput!
+  authLogin(input: LoginUserInput!): UserOutput!
+}
+
+input UrlInputDto {
+  longUrl: String!
+}
+
+input RegisterUserInput {
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String!
+  avatar: String
+}
+
+input LoginUserInput {
+  email: String!
+  password: String!
+}

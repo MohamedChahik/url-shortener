@@ -1,0 +1,84 @@
+.form-user-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-user-wrap form {
+    width: 40%;
+    padding: 15px 30px;
+    background: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+}
+
+.form-user-wrap form .title {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.7em;
+}
+
+.form-user-wrap form .form-btn {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-user-wrap .form-btn button {
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    color: var(--white);
+    border: none;
+    font-size: .9em;
+    border-radius: 4px;
+}
+
+.form-user-wrap .form-btn> button:first-of-type {
+   background: rgba(255, 0, 0, 0.54);
+    transition: var(--transtion-btn);
+}
+
+.form-user-wrap .form-btn> button:last-of-type {
+    background: rgba(0, 0, 255, 0.41);
+    transition: var(--transtion-btn);
+}
+
+.form-user-wrap .form-btn> button:first-of-type:hover {
+    background: red;
+    font-weight: bold;
+}
+
+.form-user-wrap .form-btn> button:last-of-type:hover {
+    background: blue;
+    font-weight: bold;
+}
+
+
+.form-user-wrap .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-user-wrap .form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 0 4px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-user-wrap .form-group label {
+    width: 100%;
+    margin-bottom: 4px;
+}

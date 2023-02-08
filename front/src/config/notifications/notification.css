@@ -1,0 +1,16 @@
+.notification_wrap {
+    position: absolute;
+    top: 0;
+    width: 27%;
+    height: 53px;
+}
+
+.notification_wrap dialog {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.notification_wrap p {
+    padding: 5px;
+}

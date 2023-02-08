@@ -1,0 +1,12 @@
+{
+	"name": "test-url-simoh",
+	"version": "1.0.0",
+	"author": "Sims",
+	"scripts": {
+		"postinstall": "(cd front && yarn) && (cd api && yarn)",
+		"dev": "docker-compose up",
+		"stop": "docker-compose down",
+		"rebuild": "docker-compose down && docker volume rm mc-test-url-api-node_modules mc-test-url_front-node_modules && docker-compose up -d --build"
+	},
+	"license": "MIT"
+}
