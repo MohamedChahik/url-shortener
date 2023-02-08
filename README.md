@@ -13,7 +13,6 @@ The project aims to shorten a url but also have the same location
 ## Tech Stack
 - React
 - TypeScript
-- Tailwind CSS
 - PostgreSQL
 - NestJS
 - GraphQL
