@@ -31,13 +31,18 @@ const params = {
 				});
 		}),
 		setContext((_, { headers }) => {
-			// const user = localStorage.getItem("@connectUser");
-			const token = localStorage.getItem("accessToken");
-			// const { auth } = JSON.parse(user ?? "");
+			const user = localStorage.getItem("@connectUser");
+			let authorization = {};
+
+			if (user) {
+				const { auth } = JSON.parse(user ?? "");
+				authorization = { authorization: `Bearer ${auth.accessToken}` };
+			}
+
 			return {
 				headers: {
 					...headers,
-					authorization: `Bearer ${token}`,
+					...authorization,
 				},
 			};
 		}),
